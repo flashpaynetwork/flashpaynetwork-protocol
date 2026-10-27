@@ -1,0 +1,13 @@
+{
+  "primary": "#335fe4",
+  "paper": "#ffffff",
+  "ink": "#27314a",
+  "muted": "#72798c",
+  "tint": "#dae4fd",
+  "tint-deep": "#9db5fb",
+  "primary-soft": "#9db5fb",
+  "line": "#e6edfd",
+  "up": "#49c6ca",
+  "violet": "#8462f4",
+  "down": "#d64147"
+}

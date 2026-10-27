@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flash | Payments at flash speed</title>
+<meta name="description" content="Flash is a payments brand for {{CHAIN}}: a live market board, plus a contract slot that stays inert until its address is confirmed.">
+<meta name="theme-color" content="{{THEME}}">
+<meta property="og:title" content="Flash | Payments at flash speed">
+<meta property="og:description" content="Live {{CHAIN}} market board, a contract slot that fills when its address turns real, plus a short route map.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/logo-hero.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&amp;display=swap">
+<link rel="stylesheet" href="assets/app.css">
+<link rel="preload" as="image" href="assets/logo-nav.png">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<div class="progress" aria-hidden="true"><i data-progress></i></div>
+
+<header class="top" id="top">
+  <div class="top-row wrap">
+    <a class="brand" href="#hero" aria-label="Flash home">
+      <img src="assets/logo-nav.png" alt="Flash" width="87" height="28" decoding="async">
+    </a>
+    <nav class="links" aria-label="Sections">
+      <a href="#market">Market</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#flow">Flow</a>
+      <a href="#engine">Engine</a>
+      <a href="#why">Why</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="social" role="group" aria-label="Social">
+{{SOCIAL}}
+    </div>
+  </div>
+  <div class="ca-row wrap">
+{{CA}}
+  </div>
+</header>
+
+<main>
+<section class="hero" id="hero">
+  <div class="mesh" aria-hidden="true">
+    <i class="blob b1" data-depth="0.06"></i>
+    <i class="blob b2" data-depth="0.10"></i>
+    <i class="blob b3" data-depth="0.04"></i>
+    <img class="ghost" src="assets/logo-hero.png" alt="" width="960" height="309" data-depth="0.14" decoding="async">
+    <i class="grid-dots" data-depth="0.02"></i>
+  </div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="pill" data-pill data-state="syncing" data-reveal><i class="dot"></i><span data-pill-text>Syncing the board</span></span>
+      <h1 data-reveal>Payments at <em>flash speed.</em></h1>
+      <p class="lead" data-reveal>Flash is built so a transfer lands before you look up. Fees stay out of your way, the interface stays quiet, and nothing demands a new vocabulary first.</p>
+      <div class="cta-row" data-reveal>
+        <a class="btn btn-primary" href="#market">See the board</a>
+        <a class="btn btn-ghost" href="#roadmap">Follow the route</a>
+      </div>
+      <div class="chips" data-reveal>
+{{HERO_CHIPS}}
+      </div>
+    </div>
+    <div class="hero-stage" data-reveal>
+      <div class="device" data-depth="0.05" data-spot>
+        <div class="device-bar"><span class="device-title">Pulse</span><span class="device-sub">Top five by volume</span></div>
+        <ul class="mini" data-mini>
+{{SKEL_MINI}}
+        </ul>
+        <div class="device-foot"><span class="muted">Source feed</span><a href="#market" class="more">Full board</a></div>
+      </div>
+      <div class="float-card fc1" data-depth="0.12" aria-hidden="true"><b data-vol-total>—</b><span>combined volume</span></div>
+      <div class="float-card fc2" data-depth="0.18" aria-hidden="true"><b data-count-total>—</b><span>tokens in view</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-label="Market ticker" data-ticker>
+  <div class="ticker-track" data-ticker-track>
+{{SKEL_TICKER}}
+  </div>
+</div>
+
+<section class="section" id="market">
+  <div class="wrap">
+    <div class="head" data-reveal>
+      <p class="kicker">Market pulse</p>
+      <h2>What {{CHAIN}} is trading right now</h2>
+      <p class="lead">Ten boosted tokens, ranked by the volume they moved over the last day. The board refreshes itself and keeps the last good reading if the feed stumbles.</p>
+    </div>
+    <div class="board" data-reveal data-spot-wrap>
+      <div class="board-top">
+        <div class="tabs" role="tablist" aria-label="Sort the board">
+          <button class="tab" role="tab" aria-selected="true" data-sort="volume">Volume</button>
+          <button class="tab" role="tab" aria-selected="false" data-sort="change">Movers</button>
+          <button class="tab" role="tab" aria-selected="false" data-sort="liquidity">Depth</button>
+        </div>
+        <span class="pill pill-sm" data-pill data-state="syncing"><i class="dot"></i><span data-pill-text>Syncing the board</span></span>
+      </div>
+      <div class="cols" aria-hidden="true">
+        <span>Token</span><span class="r">Price</span><span class="r">24h</span><span class="r">Volume</span><span class="r">Liquidity</span><span class="r">Copy</span>
+      </div>
+      <ol class="rows" data-rows>
+{{SKEL_ROWS}}
+      </ol>
+      <p class="board-err" data-board-err hidden role="status"></p>
+    </div>
+    <p class="fine" data-reveal>{{MARKET_NOTE}} Figures are readouts from a third party, not advice.</p>
+  </div>
+</section>
+
+<section class="section" id="roadmap">
+  <div class="wrap">
+    <div class="head" data-reveal>
+      <p class="kicker">Roadmap</p>
+      <h2>The route from here</h2>
+      <p class="lead">Four stages, each one unlocking the next. No stage claims a calendar slot, because the order matters more than the pace.</p>
+    </div>
+    <div class="split">
+      <div class="cards4" data-stagger>
+        <article class="card" data-reveal data-spot><span class="num">01</span><h3>Ground floor</h3><p>Brand, site and the live board go up first, so there is something real to inspect from the very first visit.</p></article>
+        <article class="card" data-reveal data-spot><span class="num">02</span><h3>Address goes public</h3><p>The contract address shows up inside the bar pinned above this page once confirmed, never earlier.</p></article>
+        <article class="card" data-reveal data-spot><span class="num">03</span><h3>Wallet flow</h3><p>A send screen taking a handle plus a number, with settlement displayed instantly on clearing.</p></article>
+        <article class="card" data-reveal data-spot><span class="num">04</span><h3>Open rails</h3><p>Public tooling, repositories and integrations, so other builders can wire Flash into their own products.</p></article>
+      </div>
+      <figure class="loop" data-reveal aria-label="The Flash loop">
+        <div class="loop-ring" data-spin></div>
+        <div class="loop-core"><b>Loop</b><span>each turn feeds the next</span></div>
+        <span class="node n1">Usage</span><span class="node n2">Fees</span><span class="node n3">Build</span><span class="node n4">Reach</span>
+        <figcaption>Order holds. Details shift as lessons arrive.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section tinted" id="flow">
+  <div class="wrap">
+    <div class="head center" data-reveal>
+      <p class="kicker">Flow</p>
+      <h2>Three moves, then it is done</h2>
+    </div>
+    <div class="cards3" data-stagger>
+      <article class="card flow" data-reveal data-spot>
+        <span class="step">1</span><h3>Pick who</h3><p>Start with a handle. The recipient never needs to know what a wallet is.</p>
+        <div class="mock"><span class="mock-label">To</span><span class="mock-field">river@mail.example</span></div>
+      </article>
+      <article class="card flow" data-reveal data-spot>
+        <span class="step">2</span><h3>Set the amount</h3><p>One number, one button. What you see leaving is what arrives.</p>
+        <div class="mock"><span class="mock-label">Amount</span><span class="mock-field big">20.00</span></div>
+      </article>
+      <article class="card flow" data-reveal data-spot>
+        <span class="step">3</span><h3>Watch it land</h3><p>Confirmation arrives while your thumb is still on the screen.</p>
+        <div class="mock ok"><span class="tick" aria-hidden="true"></span><span class="mock-field">Landed</span></div>
+      </article>
+    </div>
+    <p class="fine center" data-reveal>Layout preview only. Nothing on this page moves real funds.</p>
+  </div>
+</section>
+
+<section class="section" id="engine">
+  <div class="wrap">
+    <div class="head center" data-reveal>
+      <p class="kicker">Engine</p>
+      <h2>Serious machinery, plain words</h2>
+      <p class="lead">What happens between the press and the receipt, explained over coffee.</p>
+    </div>
+    <ol class="steps5" data-stagger>
+      <li class="card mini-step" data-reveal data-spot><b>1</b><h3>Intent</h3><p>Your request is packaged as a single instruction.</p></li>
+      <li class="card mini-step" data-reveal data-spot><b>2</b><h3>Signature</h3><p>A key you control approves it, once.</p></li>
+      <li class="card mini-step" data-reveal data-spot><b>3</b><h3>Leader</h3><p>The scheduled validator orders it with its neighbours.</p></li>
+      <li class="card mini-step" data-reveal data-spot><b>4</b><h3>Vote</h3><p>Other validators confirm the block holding it.</p></li>
+      <li class="card mini-step" data-reveal data-spot><b>5</b><h3>Receipt</h3><p>The result is final and visible to both sides.</p></li>
+    </ol>
+    <div class="tiles" data-stagger>
+      <div class="stat" data-reveal data-spot><b data-stat="count">—</b><span>tokens on the live board</span></div>
+      <div class="stat" data-reveal data-spot><b data-stat="volume">—</b><span>combined 24h volume</span></div>
+      <div class="stat" data-reveal data-spot><b data-stat="top">—</b><span>strongest mover on the board</span></div>
+    </div>
+    <p class="center plumbing" data-reveal>Chains do the heavy lifting. You only ever see the result.</p>
+  </div>
+</section>
+
+<section class="section" id="why">
+  <div class="wrap split2">
+    <div class="why-copy" data-reveal>
+      <p class="kicker">Why Flash</p>
+      <h2>Speed is a feeling before it is a number</h2>
+      <p class="lead">Most payment tools make you wait, then explain. Flash flips that: the result first, the explanation only on request. {{CHAIN}} gives the base layer the pace it needs.</p>
+      <p>Every external fact on this site sits in one register. When a fact is confirmed, its slot turns on. Until then the slot stays visibly empty instead of pretending.</p>
+    </div>
+    <div class="facts card" data-reveal data-spot>
+      <h3>Register</h3>
+      <ul class="fact-list">
+{{FACTS}}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="wrap narrow">
+    <div class="head center" data-reveal>
+      <p class="kicker">FAQ</p>
+      <h2>Fair questions</h2>
+    </div>
+    <div class="faq" data-reveal>
+      <div class="qa"><button class="q" aria-expanded="false" aria-controls="a1" id="q1"><span>Is there a token address yet?</span><i class="chev" aria-hidden="true"></i></button><div class="a" id="a1" role="region" aria-labelledby="q1"><div><p>The bar pinned above this page serves as the single source. While it reads pending, nothing is published, so an address circulating elsewhere came from somebody else.</p></div></div></div>
+      <div class="qa"><button class="q" aria-expanded="false" aria-controls="a2" id="q2"><span>Does the board depend on the token?</span><i class="chev" aria-hidden="true"></i></button><div class="a" id="a2" role="region" aria-labelledby="q2"><div><p>No. The board reads a public feed on its own schedule. It runs the same whether or not an address has been announced.</p></div></div></div>
+      <div class="qa"><button class="q" aria-expanded="false" aria-controls="a3" id="q3"><span>What if the feed goes quiet?</span><i class="chev" aria-hidden="true"></i></button><div class="a" id="a3" role="region" aria-labelledby="q3"><div><p>The board retries with growing pauses and keeps the last good reading on screen. If nothing was ever loaded, the cells show a dash plus a short error.</p></div></div></div>
+      <div class="qa"><button class="q" aria-expanded="false" aria-controls="a4" id="q4"><span>Why are some icons greyed out?</span><i class="chev" aria-hidden="true"></i></button><div class="a" id="a4" role="region" aria-labelledby="q4"><div><p>Greyed means unconfirmed. Links appear only after the owner states them, so you never land on a lookalike page.</p></div></div></div>
+      <div class="qa"><button class="q" aria-expanded="false" aria-controls="a5" id="q5"><span>Is this financial advice?</span><i class="chev" aria-hidden="true"></i></button><div class="a" id="a5" role="region" aria-labelledby="q5"><div><p>No. Prices and volumes are third-party readouts shown for context. Do your own checking before you act on any of it.</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="follow">
+  <div class="wrap center">
+    <p class="kicker light" data-reveal>Stay close</p>
+    <h2 data-reveal>Watch this space</h2>
+    <p class="lead light" data-reveal>Channels open one at a time, each only after it is confirmed. Active ones light up below.</p>
+    <div class="band-links" data-reveal>
+{{CTA_LINKS}}
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-row">
+    <div class="foot-brand"><img src="assets/logo-nav.png" alt="Flash" width="87" height="28" loading="lazy" decoding="async"><p>Payments at flash speed.</p></div>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="#market">Market</a><a href="#roadmap">Roadmap</a><a href="#flow">Flow</a><a href="#engine">Engine</a><a href="#faq">FAQ</a>
+    </nav>
+    <div class="foot-chain">{{FOOT_CHAIN}}</div>
+  </div>
+</footer>
+
+<script type="application/json" id="register">{{REGISTER}}</script>
+<script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

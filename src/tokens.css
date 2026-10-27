@@ -1,0 +1,25 @@
+/* Written by scripts/palette.mjs. The only file in the project that holds colour literals. */
+:root {
+  --c-primary: #335fe4; /* brand/LOGO FLASH PNG.png k=4 region 0,0,2000,2000 share 6% px(696,822) */
+  --c-paper: #ffffff; /* brand/LOGO FLASH PNG.png k=4 region 0,0,2000,2000 share 94% px(0,0) */
+  --c-ink: #27314a; /* reference/FLASH 1.jpg.jpeg k=3 region 50,195,760,165 share 29% px(150,205) */
+  --c-muted: #72798c; /* reference/FLASH 1.jpg.jpeg k=3 region 50,380,600,120 share 8% px(366,400) */
+  --c-tint: #dae4fd; /* reference/FLASH 1.jpg.jpeg k=3 region 1100,600,400,250 share 47% px(1397,621) */
+  --c-tint-deep: #9db5fb; /* reference/FLASH 1.jpg.jpeg k=3 region 1100,600,400,250 share 16% px(1204,604) */
+  --c-primary-soft: #9db5fb; /* reference/FLASH 1.jpg.jpeg k=3 region 1100,600,400,250 share 16% px(1204,604) */
+  --c-line: #e6edfd; /* reference/FLASH 1.jpg.jpeg k=3 region 280,826,320,50 share 85% px(444,829) */
+  --c-up: #49c6ca; /* reference/FLASH 1.jpg.jpeg k=5 region 50,832,50,44 share 15% px(73,839) */
+  --c-violet: #8462f4; /* reference/FLASH 1.jpg.jpeg k=5 region 50,832,50,44 share 15% px(77,869) */
+  --c-down: #d64147; /* reference/SAMPUL FLASH JPG.jpg.jpeg k=3 region 600,0,500,100 share 23% px(1038,0) */
+  --c-primary-ink: color-mix(in srgb, var(--c-primary) 78%, var(--c-ink));
+  --c-primary-a08: color-mix(in srgb, var(--c-primary) 8%, transparent);
+  --c-primary-a16: color-mix(in srgb, var(--c-primary) 16%, transparent);
+  --c-primary-a32: color-mix(in srgb, var(--c-primary) 32%, transparent);
+  --c-ink-a06: color-mix(in srgb, var(--c-ink) 6%, transparent);
+  --c-ink-a12: color-mix(in srgb, var(--c-ink) 12%, transparent);
+  --c-ink-a40: color-mix(in srgb, var(--c-ink) 40%, transparent);
+  --c-paper-a72: color-mix(in srgb, var(--c-paper) 72%, transparent);
+  --c-up-a16: color-mix(in srgb, var(--c-up) 16%, transparent);
+  --c-down-a16: color-mix(in srgb, var(--c-down) 16%, transparent);
+  --c-violet-a16: color-mix(in srgb, var(--c-violet) 16%, transparent);
+}
